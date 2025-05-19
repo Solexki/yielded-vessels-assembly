@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".testimonies-slider");
   const slides = document.querySelectorAll(".testimonies");
   const prevButton = document.querySelector(".fa-arrow-left");
-  const nextButton = document.querySelector(".fa-arrow-right");
+  const nextButton = document.querySelector(".navigator-arrow .fa-arrow-right");
   const navigator = document.querySelectorAll(".diomond-indicator");
+  console.log(nextButton);
+  console.log(prevButton);
 
   let activeIndex = 1;
 
@@ -42,10 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
       indicator.classList.toggle("active", index === activeIndex);
     });
   }
+
   nextButton.addEventListener("click", function () {
     if (activeIndex < slides.length - 1) {
       activeIndex++;
     }
+
     updateSlidePosition();
   });
 
@@ -53,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (activeIndex > 0) {
       activeIndex--;
     }
+
     updateSlidePosition();
   });
 

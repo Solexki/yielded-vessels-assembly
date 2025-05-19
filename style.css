@@ -97,7 +97,9 @@ nav {
   padding: 5px 15px;
   color: #fff;
 }
-
+.menu-icon{
+  display: none;
+}
 .nav-logo {
   display: flex;
   align-items: center;
@@ -252,6 +254,7 @@ nav {
 .testimony-container {
   position: relative;
   width: 470px;
+  max-height: 250px;
   font-size: var(--des-p);
   font-weight: 400;
   color: var(--white-man);
@@ -275,7 +278,7 @@ nav {
 
 .testimony-author {
   margin-left: 70px;
-  padding: 30px 0 20px;
+  padding: 20px 0 30px;
 }
 
 .testimony-author h3 {
@@ -405,7 +408,7 @@ nav {
 .version-img {
   position: absolute;
   top: -40px;
-  right: -10px;
+  right: 50px;
 }
 
 .version {
@@ -457,6 +460,9 @@ nav {
     z-index: 99;
     border-radius: 0 0px 10px 10px;
   }
+  .menu-icon{
+  display: block;
+}
   .show-nav-item {
     display: flex;
   }
