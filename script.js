@@ -82,6 +82,8 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+//mobile button
 const menuIcon = document.querySelector(".menu-icon");
 const navItem = document.querySelector(".nav-item");
 
